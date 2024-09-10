@@ -16,7 +16,7 @@ func GetDB() *gorm.DB {
 func Connect() {
 	d, err := gorm.Open("mysql", "root:Mirzaeiali17965@tcp(localhost:3306)/mydatabase?charset=utf8mb4&parseTime=True&loc=Local")
 
-	// d, err := gorm.Open("mysql", "root:Mirzaeiali17965@12@/mydatabase?charset=utf8&parseTime=True&loc=Local")
+	// d, err := gorm.Open("mysql", "your_username:your_password@12@/your_db_name?charset=utf8&parseTime=True&loc=Local")
 	if err != nil{
 		panic(err)
 	}
